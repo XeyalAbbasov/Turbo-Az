@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://host.docker.internal:3307/turbo_az
+    url: jdbc:mysql://localhost:3306/turbo-az
+    username: root
+    password: 1234
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQLDialect
+security:
+      jwt:
+        secret: "xeyalxeyalxeyalxeyalxeyalxeyalxeyalxeyalxeyalxeyalxeyalxeyalxeya"
